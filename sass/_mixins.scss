@@ -1,0 +1,58 @@
+@use "variables" as v;
+
+@mixin panel($width, $height, $backgroundColor, $m-height, $figure: false) {
+  width: $width;
+  height: $height;
+  background-color: $backgroundColor;
+  padding: 28px 14px 28px 28px;
+  border-radius: 0.5rem;
+  margin: $m-height auto;
+  @if ($figure) {
+    background: {
+      image: url("../images/bg-pattern-quotation.svg");
+      repeat: no-repeat;
+      position-x: 93%;
+      position-y: 20px;
+    }
+  }
+}
+
+@mixin header($colorTitle: v.$White, $colorParagraph: v.$Light-gray) {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-bottom: 27px;
+  &__img {
+    width: 33px;
+    height: 33px;
+    border: 1px solid v.$Light-gray;
+    border-radius: 50%;
+  }
+  &__data {
+    font-size: 1.2em;
+    h3 {
+      color: $colorTitle;
+    }
+    p {
+      color: $colorParagraph;
+      opacity: 50%;
+    }
+  }
+}
+
+@mixin title($color: v.$White, $font-weight: 600) {
+  font-size: 1.7em;
+  font-weight: $font-weight;
+  color: $color;
+  margin-bottom: 24px;
+  // border: 1px solid red;
+}
+
+@mixin description($color: v.$White, $MarginR: 43px) {
+  font-size: 0.98em;
+  color: $color;
+  margin-right: $MarginR;
+  line-height: 18px;
+  opacity: 70%;
+  // border: 1px solid red;
+}

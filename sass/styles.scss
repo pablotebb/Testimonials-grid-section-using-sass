@@ -1,0 +1,77 @@
+@use "variables" as v;
+@use "initial";
+@use "footer";
+@use "mixins" as m;
+
+.main-container {
+  // border: 1px solid red;
+  width: v.$Width-mobile;
+  height: v.$Height-mobile;
+  margin: 70px auto 60px;
+}
+
+.article-violet {
+  @include m.panel(328px, 484px, v.$Moderate-violet, 0, true);
+  .section-personal-data {
+    @include m.header(v.$Light-gray);
+  }
+  .section-title {
+    @include m.title(v.$White, 500);
+  }
+  .section-description {
+    @include m.description(v.$Light-gray);
+  }
+}
+
+.article-gray {
+  @include m.panel(328px, 277px, v.$Very-dark-grayish-blue, 24px);
+  .section-personal-data {
+    @include m.header(v.$Light-gray);
+  }
+  .section-title {
+    @include m.title();
+  }
+  .section-description {
+    @include m.description(v.$White, 23px);
+  }
+}
+
+.article-white-1 {
+  @include m.panel(328px, 252px, v.$White, 24px);
+  .section-personal-data {
+    @include m.header(v.$Very-dark-grayish-blue, v.$Moderate-violet);
+  }
+  .section-title {
+    @include m.title(v.$Very-dark-grayish-blue);
+  }
+  .section-description {
+    @include m.description(v.$Very-dark-grayish-blue);
+  }
+}
+
+.article-black {
+  @include m.panel(328px, 430px, v.$Very-dark-blackish-blue, 24px);
+  .section-personal-data {
+    @include m.header(v.$Light-gray);
+  }
+  .section-title {
+    @include m.title();
+  }
+  .section-description {
+    @include m.description(v.$White, 29px);
+  }
+}
+
+.article-white-2 {
+  // border: 1px solid red;
+  @include m.panel(328px, 498px, v.$Light-grayish-blue, 24px);
+  .section-personal-data {
+    @include m.header(v.$Very-dark-grayish-blue, v.$Moderate-violet);
+  }
+  .section-title {
+    @include m.title(v.$Very-dark-grayish-blue, 500);
+  }
+  .section-description {
+    @include m.description(v.$Very-dark-grayish-blue, 30px);
+  }
+}

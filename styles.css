@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+.attribution {
+  border: 1xp solid red;
+  margin-top: 0;
+  margin-bottom: 98px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.main-container {
+  width: 375px;
+  height: 2060px;
+  margin: 70px auto 60px;
+}
+
+.article-violet {
+  width: 328px;
+  height: 484px;
+  background-color: hsl(263deg, 55%, 52%);
+  padding: 28px 14px 28px 28px;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position-x: 93%;
+  background-position-y: 20px;
+}
+.article-violet .section-personal-data {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.article-violet .section-personal-data__img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid hsl(0deg, 0%, 81%);
+  border-radius: 50%;
+}
+.article-violet .section-personal-data__data {
+  font-size: 1.2em;
+}
+.article-violet .section-personal-data__data h3 {
+  color: hsl(0deg, 0%, 81%);
+}
+.article-violet .section-personal-data__data p {
+  color: hsl(0deg, 0%, 81%);
+  opacity: 50%;
+}
+.article-violet .section-title {
+  font-size: 1.7em;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 24px;
+}
+.article-violet .section-description {
+  font-size: 0.98em;
+  color: hsl(0deg, 0%, 81%);
+  margin-right: 43px;
+  line-height: 18px;
+  opacity: 70%;
+}
+
+.article-gray {
+  width: 328px;
+  height: 277px;
+  background-color: hsl(217deg, 19%, 35%);
+  padding: 28px 14px 28px 28px;
+  border-radius: 0.5rem;
+  margin: 24px auto;
+}
+.article-gray .section-personal-data {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.article-gray .section-personal-data__img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid hsl(0deg, 0%, 81%);
+  border-radius: 50%;
+}
+.article-gray .section-personal-data__data {
+  font-size: 1.2em;
+}
+.article-gray .section-personal-data__data h3 {
+  color: hsl(0deg, 0%, 81%);
+}
+.article-gray .section-personal-data__data p {
+  color: hsl(0deg, 0%, 81%);
+  opacity: 50%;
+}
+.article-gray .section-title {
+  font-size: 1.7em;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 24px;
+}
+.article-gray .section-description {
+  font-size: 0.98em;
+  color: hsl(0deg, 0%, 100%);
+  margin-right: 23px;
+  line-height: 18px;
+  opacity: 70%;
+}
+
+.article-white-1 {
+  width: 328px;
+  height: 252px;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 28px 14px 28px 28px;
+  border-radius: 0.5rem;
+  margin: 24px auto;
+}
+.article-white-1 .section-personal-data {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.article-white-1 .section-personal-data__img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid hsl(0deg, 0%, 81%);
+  border-radius: 50%;
+}
+.article-white-1 .section-personal-data__data {
+  font-size: 1.2em;
+}
+.article-white-1 .section-personal-data__data h3 {
+  color: hsl(217deg, 19%, 35%);
+}
+.article-white-1 .section-personal-data__data p {
+  color: hsl(263deg, 55%, 52%);
+  opacity: 50%;
+}
+.article-white-1 .section-title {
+  font-size: 1.7em;
+  font-weight: 600;
+  color: hsl(217deg, 19%, 35%);
+  margin-bottom: 24px;
+}
+.article-white-1 .section-description {
+  font-size: 0.98em;
+  color: hsl(217deg, 19%, 35%);
+  margin-right: 43px;
+  line-height: 18px;
+  opacity: 70%;
+}
+
+.article-black {
+  width: 328px;
+  height: 430px;
+  background-color: hsl(219deg, 29%, 14%);
+  padding: 28px 14px 28px 28px;
+  border-radius: 0.5rem;
+  margin: 24px auto;
+}
+.article-black .section-personal-data {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.article-black .section-personal-data__img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid hsl(0deg, 0%, 81%);
+  border-radius: 50%;
+}
+.article-black .section-personal-data__data {
+  font-size: 1.2em;
+}
+.article-black .section-personal-data__data h3 {
+  color: hsl(0deg, 0%, 81%);
+}
+.article-black .section-personal-data__data p {
+  color: hsl(0deg, 0%, 81%);
+  opacity: 50%;
+}
+.article-black .section-title {
+  font-size: 1.7em;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 24px;
+}
+.article-black .section-description {
+  font-size: 0.98em;
+  color: hsl(0deg, 0%, 100%);
+  margin-right: 29px;
+  line-height: 18px;
+  opacity: 70%;
+}
+
+.article-white-2 {
+  width: 328px;
+  height: 498px;
+  background-color: hsl(210deg, 46%, 95%);
+  padding: 28px 14px 28px 28px;
+  border-radius: 0.5rem;
+  margin: 24px auto;
+}
+.article-white-2 .section-personal-data {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.article-white-2 .section-personal-data__img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid hsl(0deg, 0%, 81%);
+  border-radius: 50%;
+}
+.article-white-2 .section-personal-data__data {
+  font-size: 1.2em;
+}
+.article-white-2 .section-personal-data__data h3 {
+  color: hsl(217deg, 19%, 35%);
+}
+.article-white-2 .section-personal-data__data p {
+  color: hsl(263deg, 55%, 52%);
+  opacity: 50%;
+}
+.article-white-2 .section-title {
+  font-size: 1.7em;
+  font-weight: 500;
+  color: hsl(217deg, 19%, 35%);
+  margin-bottom: 24px;
+}
+.article-white-2 .section-description {
+  font-size: 0.98em;
+  color: hsl(217deg, 19%, 35%);
+  margin-right: 30px;
+  line-height: 18px;
+  opacity: 70%;
+}
+
+/*# sourceMappingURL=styles.css.map */
