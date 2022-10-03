@@ -7,11 +7,28 @@
   // border: 1px solid red;
   width: v.$Width-mobile;
   height: v.$Height-mobile;
-  margin: 70px auto 60px;
+  margin: 4.375rem auto 3.75rem;
+  @media (min-width: v.$Width-media) {
+    // border: 1px solid red;
+    width: v.$Width-desktop;
+    height: v.$Height-desktop;
+    .cuatro {
+      // border: 1px solid black;
+      height: 34.375rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      gap: 1.125rem;
+    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.375rem;
+  }
 }
 
 .article-violet {
-  @include m.panel(328px, 484px, v.$Moderate-violet, 0, true);
+  @include m.panel(20.5rem, 30.25rem, v.$Moderate-violet, 0, true);
   .section-personal-data {
     @include m.header(v.$Light-gray);
   }
@@ -21,10 +38,38 @@
   .section-description {
     @include m.description(v.$Light-gray);
   }
+  @media (min-width: v.$Width-media) {
+    flex: 1;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    @include m.panel(
+      29.375rem,
+      9.375rem,
+      v.$Moderate-violet,
+      0,
+      true,
+      83%,
+      0.0625rem
+    );
+    padding: 1.125rem 0.875rem 1.125rem 1.375rem;
+    margin: 0 auto;
+    .section-personal-data {
+      @include m.header(v.$Light-gray, v.$Light-gray, 1.625rem, 1.625rem);
+      font-size: 0.7em;
+      margin-bottom: 1.4375rem;
+    }
+    .section-title {
+      @include m.title(v.$White, 500, 1.4em);
+      margin-bottom: 0.75rem;
+    }
+    .section-description {
+      @include m.description(v.$Light-gray, 0.9em, 0.9em);
+    }
+  }
 }
 
 .article-gray {
-  @include m.panel(328px, 277px, v.$Very-dark-grayish-blue, 24px);
+  @include m.panel(20.5rem, 17.3125rem, v.$Very-dark-grayish-blue, 1.5rem);
   .section-personal-data {
     @include m.header(v.$Light-gray);
   }
@@ -32,12 +77,32 @@
     @include m.title();
   }
   .section-description {
-    @include m.description(v.$White, 23px);
+    @include m.description(v.$White, 1.4375rem);
+  }
+  @media (min-width: v.$Width-media) {
+    flex: 1;
+    grid-column: 3 / 4;
+    grid-row: 1;
+    @include m.panel(15.4375rem, 12.5rem, v.$Very-dark-grayish-blue, 1.5rem);
+    padding: 1.125rem 0.875rem 1.125rem 1.375rem;
+    margin: 0;
+    .section-personal-data {
+      @include m.header(v.$Light-gray, v.$Light-gray, 1.625rem, 1.625rem);
+      font-size: 0.7em;
+      margin-bottom: 1.4375rem;
+    }
+    .section-title {
+      @include m.title(v.$White, 500, 1.5em);
+      margin-bottom: 0.75rem;
+    }
+    .section-description {
+      @include m.description(v.$Light-gray, 3em, 0.9em);
+    }
   }
 }
 
 .article-white-1 {
-  @include m.panel(328px, 252px, v.$White, 24px);
+  @include m.panel(20.5rem, 15.75rem, v.$White, 1.5rem);
   .section-personal-data {
     @include m.header(v.$Very-dark-grayish-blue, v.$Moderate-violet);
   }
@@ -47,10 +112,37 @@
   .section-description {
     @include m.description(v.$Very-dark-grayish-blue);
   }
+  @media (min-width: v.$Width-media) {
+    flex: 1;
+    // border: 1px solid black;
+    grid-column: 1 / 2;
+    grid-row: 2;
+    @include m.panel(14.125rem, 12.5rem, v.$White, 1.5rem);
+    padding: 1.125rem 0.875rem 1.125rem 1.375rem;
+    margin: 0 auto;
+    .section-personal-data {
+      @include m.header(
+        v.$Very-dark-grayish-blue,
+        v.$Moderate-violet,
+        1.625rem,
+        1.625rem
+      );
+      font-size: 0.7em;
+      margin-bottom: 1.4375rem;
+    }
+    .section-title {
+      @include m.title(v.$Very-dark-grayish-blue, 600, 1.55em);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-description {
+      @include m.description(v.$Very-dark-grayish-blue, 0.8em);
+    }
+  }
 }
 
 .article-black {
-  @include m.panel(328px, 430px, v.$Very-dark-blackish-blue, 24px);
+  @include m.panel(20.5rem, 26.875rem, v.$Very-dark-blackish-blue, 1.5rem);
   .section-personal-data {
     @include m.header(v.$Light-gray);
   }
@@ -58,13 +150,33 @@
     @include m.title();
   }
   .section-description {
-    @include m.description(v.$White, 29px);
+    @include m.description(v.$White, 1.8125rem);
+  }
+  @media (min-width: v.$Width-media) {
+    flex: 1;
+    grid-column: 2 / 4;
+    grid-row: 2;
+    @include m.panel(30.625rem, 12.5rem, v.$Very-dark-blackish-blue, 1.5rem);
+    padding: 1.125rem 0.875rem 1.125rem 1.375rem;
+    margin: 0 auto;
+    .section-personal-data {
+      @include m.header(v.$Light-gray, v.$Light-gray, 1.625rem, 1.625rem);
+      font-size: 0.7em;
+      margin-bottom: 1.4375rem;
+    }
+    .section-title {
+      @include m.title(v.$White, 500, 1.4em);
+      margin-bottom: 0.75rem;
+    }
+    .section-description {
+      @include m.description(v.$Light-gray, 0.7em, 0.96em);
+    }
   }
 }
 
 .article-white-2 {
   // border: 1px solid red;
-  @include m.panel(328px, 498px, v.$Light-grayish-blue, 24px);
+  @include m.panel(20.5rem, 31.125rem, v.$White, 1.5rem);
   .section-personal-data {
     @include m.header(v.$Very-dark-grayish-blue, v.$Moderate-violet);
   }
@@ -72,6 +184,32 @@
     @include m.title(v.$Very-dark-grayish-blue, 500);
   }
   .section-description {
-    @include m.description(v.$Very-dark-grayish-blue, 30px);
+    @include m.description(v.$Very-dark-grayish-blue, 1.875rem);
+  }
+  @media (min-width: v.$Width-media) {
+    flex: 1;
+    // border: 1px solid red;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    @include m.panel(13.75rem, 6.25rem, v.$White, 1.5rem);
+    padding: 1.125rem 0.875rem 1.125rem 1.375rem;
+    margin: 0 auto;
+    .section-personal-data {
+      @include m.header(
+        v.$Very-dark-grayish-blue,
+        v.$Moderate-violet,
+        1.625rem,
+        1.625rem
+      );
+      font-size: 0.7em;
+      margin-bottom: 1.4375rem;
+    }
+    .section-title {
+      @include m.title(v.$Very-dark-grayish-blue, 600, 1.4em);
+      margin-bottom: 0.75rem;
+    }
+    .section-description {
+      @include m.description(v.$Very-dark-grayish-blue, 0.8em, 0.9em);
+    }
   }
 }

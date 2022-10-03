@@ -1,31 +1,44 @@
 @use "variables" as v;
 
-@mixin panel($width, $height, $backgroundColor, $m-height, $figure: false) {
+@mixin panel(
+  $width,
+  $height,
+  $backgroundColor,
+  $m-height,
+  $figure: false,
+  $pos-x: 93%,
+  $pos-y: 1.25rem
+) {
   width: $width;
-  height: $height;
+  min-height: $height;
   background-color: $backgroundColor;
-  padding: 28px 14px 28px 28px;
+  padding: 1.75rem 0.875rem 1.75rem 1.75rem;
   border-radius: 0.5rem;
   margin: $m-height auto;
   @if ($figure) {
     background: {
       image: url("../images/bg-pattern-quotation.svg");
       repeat: no-repeat;
-      position-x: 93%;
-      position-y: 20px;
+      position-x: $pos-x;
+      position-y: $pos-y;
     }
   }
 }
 
-@mixin header($colorTitle: v.$White, $colorParagraph: v.$Light-gray) {
+@mixin header(
+  $colorTitle: v.$White,
+  $colorParagraph: v.$Light-gray,
+  $width: 2.0625rem,
+  $height: 2.0625rem
+) {
   display: flex;
-  gap: 17px;
+  gap: 1.0625rem;
   align-items: center;
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
   &__img {
-    width: 33px;
-    height: 33px;
-    border: 1px solid v.$Light-gray;
+    width: $width;
+    height: $height;
+    border: 0.0625rem solid v.$Light-gray;
     border-radius: 50%;
   }
   &__data {
@@ -40,19 +53,19 @@
   }
 }
 
-@mixin title($color: v.$White, $font-weight: 600) {
-  font-size: 1.7em;
+@mixin title($color: v.$White, $font-weight: 600, $font-size: 1.7em) {
+  font-size: $font-size;
   font-weight: $font-weight;
   color: $color;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   // border: 1px solid red;
 }
 
-@mixin description($color: v.$White, $MarginR: 43px) {
-  font-size: 0.98em;
+@mixin description($color: v.$White, $MarginR: 2.6875rem, $font-size: 0.98em) {
+  font-size: $font-size;
   color: $color;
   margin-right: $MarginR;
-  line-height: 18px;
+  line-height: 1.125rem;
   opacity: 70%;
   // border: 1px solid red;
 }
